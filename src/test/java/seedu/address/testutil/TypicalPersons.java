@@ -6,8 +6,6 @@ import static seedu.address.logic.commands.CommandTestUtil.VALID_EMAIL_AMY;
 import static seedu.address.logic.commands.CommandTestUtil.VALID_EMAIL_BOB;
 import static seedu.address.logic.commands.CommandTestUtil.VALID_NAME_AMY;
 import static seedu.address.logic.commands.CommandTestUtil.VALID_NAME_BOB;
-import static seedu.address.logic.commands.CommandTestUtil.VALID_PHONE_AMY;
-import static seedu.address.logic.commands.CommandTestUtil.VALID_PHONE_BOB;
 import static seedu.address.logic.commands.CommandTestUtil.VALID_TAG_FRIEND;
 import static seedu.address.logic.commands.CommandTestUtil.VALID_TAG_HUSBAND;
 
@@ -25,33 +23,32 @@ public class TypicalPersons {
 
     public static final Word ALICE = new PersonBuilder().withName("Alice Pauline")
             .withAddress("123, Jurong West Ave 6, #08-111").withEmail("alice@example.com")
-            .withPhone("94351253")
             .withTags("friends").build();
     public static final Word BENSON = new PersonBuilder().withName("Benson Meier")
             .withAddress("311, Clementi Ave 2, #02-25")
-            .withEmail("johnd@example.com").withPhone("98765432")
+            .withEmail("johnd@example.com")
             .withTags("owesMoney", "friends").build();
-    public static final Word CARL = new PersonBuilder().withName("Carl Kurz").withPhone("95352563")
+    public static final Word CARL = new PersonBuilder().withName("Carl Kurz")
             .withEmail("heinz@example.com").withAddress("wall street").build();
-    public static final Word DANIEL = new PersonBuilder().withName("Daniel Meier").withPhone("87652533")
+    public static final Word DANIEL = new PersonBuilder().withName("Daniel Meier")
             .withEmail("cornelia@example.com").withAddress("10th street").withTags("friends").build();
-    public static final Word ELLE = new PersonBuilder().withName("Elle Meyer").withPhone("9482224")
+    public static final Word ELLE = new PersonBuilder().withName("Elle Meyer")
             .withEmail("werner@example.com").withAddress("michegan ave").build();
-    public static final Word FIONA = new PersonBuilder().withName("Fiona Kunz").withPhone("9482427")
+    public static final Word FIONA = new PersonBuilder().withName("Fiona Kunz")
             .withEmail("lydia@example.com").withAddress("little tokyo").build();
-    public static final Word GEORGE = new PersonBuilder().withName("George Best").withPhone("9482442")
+    public static final Word GEORGE = new PersonBuilder().withName("George Best")
             .withEmail("anna@example.com").withAddress("4th street").build();
 
     // Manually added
-    public static final Word HOON = new PersonBuilder().withName("Hoon Meier").withPhone("8482424")
+    public static final Word HOON = new PersonBuilder().withName("Hoon Meier")
             .withEmail("stefan@example.com").withAddress("little india").build();
-    public static final Word IDA = new PersonBuilder().withName("Ida Mueller").withPhone("8482131")
+    public static final Word IDA = new PersonBuilder().withName("Ida Mueller")
             .withEmail("hans@example.com").withAddress("chicago ave").build();
 
     // Manually added - Word's details found in {@code CommandTestUtil}
-    public static final Word AMY = new PersonBuilder().withName(VALID_NAME_AMY).withPhone(VALID_PHONE_AMY)
+    public static final Word AMY = new PersonBuilder().withName(VALID_NAME_AMY)
             .withEmail(VALID_EMAIL_AMY).withAddress(VALID_ADDRESS_AMY).withTags(VALID_TAG_FRIEND).build();
-    public static final Word BOB = new PersonBuilder().withName(VALID_NAME_BOB).withPhone(VALID_PHONE_BOB)
+    public static final Word BOB = new PersonBuilder().withName(VALID_NAME_BOB)
             .withEmail(VALID_EMAIL_BOB).withAddress(VALID_ADDRESS_BOB).withTags(VALID_TAG_HUSBAND, VALID_TAG_FRIEND)
             .build();
 

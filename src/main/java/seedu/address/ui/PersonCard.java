@@ -33,8 +33,6 @@ public class PersonCard extends UiPart<Region> {
     @FXML
     private Label id;
     @FXML
-    private Label phone;
-    @FXML
     private Label address;
     @FXML
     private Label email;
@@ -46,7 +44,6 @@ public class PersonCard extends UiPart<Region> {
         this.word = word;
         id.setText(displayedIndex + ". ");
         name.setText(word.getName().fullName);
-        phone.setText(word.getPhone().value);
         address.setText(word.getAddress().value);
         email.setText(word.getEmail().value);
         initTags(word);
